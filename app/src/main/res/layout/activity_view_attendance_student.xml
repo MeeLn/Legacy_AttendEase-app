@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ViewAttendanceStudent">
+
+    <include
+        layout="@layout/toolbar_view_attendance"
+        />
+
+    <EditText
+        android:id="@+id/editTextCourseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Course Name"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/buttonShowAttendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Attendance" />
+
+    <TextView
+        android:id="@+id/textViewAttendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Attendance details will be shown here"
+        android:textSize="16sp" />
+
+</LinearLayout>
